@@ -1,7 +1,12 @@
 sources:
   - name: ads_platform
+    description: this is table for daily ads.
     schema: bingeflix
     database: raw
     tables:
       - name: daily_ads
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 2, period: day}
         identifier: ads
+        description: this is table for daily ads.

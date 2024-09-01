@@ -1,3 +1,6 @@
 fct_name,column_name,id_to_exclude,comment
-fct_root_models,child,int_dates,calendar table does not need to have a source model
+fct_undocumented_models,RESOURCE_NAME,fct_events,I want to make an exception for this model
+fct_root_models,CHILD,int_dates,I want to make an exception for this model
+fct_model_fanout,PARENT,stg_bingeflix__events,I want to make an exception for this model
 
+ 
