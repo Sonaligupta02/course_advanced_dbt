@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: fct_events 
+  - name: fct_events
     description: This model contains events data with session, user, and event details.
     columns:
       - name: session_id
@@ -25,4 +25,3 @@ models:
         description: The unique identifier for the event.
         tests:
           - not_null  # Ensures no null values in the event_id column
-    
