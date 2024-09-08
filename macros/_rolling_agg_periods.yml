@@ -1,0 +1,12 @@
+
+macros:
+
+  - name: rolling_agg_periods
+    description: this macro aggregate a column over a window of N periods
+
+    arguments:
+      - name: column_name
+      - name: partition_by
+      - name: order_by
+      - name: agg_func
+      - name: periods
