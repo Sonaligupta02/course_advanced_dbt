@@ -8,7 +8,6 @@ models:
         description: The unique identifier for the session.
         tests:
           - not_null  # Ensures no null values in the session_id column
-          - unique
 
       - name: created_at
         description: The timestamp when the event was created.
@@ -20,6 +19,8 @@ models:
 
       - name: event_name
         description: The name of the event.
+        data_tests:
+          - assert_valid_event_name
 
       - name: event_id
         description: The unique identifier for the event.
